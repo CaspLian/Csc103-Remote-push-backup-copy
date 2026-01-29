@@ -1,0 +1,135 @@
+Script started on 2026-01-29 11:32:28-05:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="97" LINES="24"]
+[?2004h+[[32m02[0m]$ ls
+[?2004l[0m[1mlargest.cpp[0m  [0mtranscript[0m
+[?2004h+[[32m02[0m]$ g++ largest.cpp [K[K[Kverb <objex cts. >..[K[Kg++ largest.cpp 
+[?2004l[?2004h+[[32m02[0m]$ [Kls
+[?2004l[0m[04;32ma.out[0m  [1mlargest.cpp[0m  [0mtranscript[0m
+[?2004h+[[32m02[0m]$   \ a.out
+[?2004lbash: a.out: command not found
+[?2004h+[[32m02[0m]$ ./a.out 
+[?2004l234
+9087
+23
+18
+888
+19
+123
+asdfasdf
+9087[?2004h+[[32m02[0m]$ echo 123 890 123 8338 191
+[?2004l123 890 123 8338 191
+[?2004h+[[32m02[0m]$ [K[7mecho 123 890 123 8338 191[27m:[[32m02[0m]$ echo 123 890 123 8338 191++[[32m02[0m]$ echo 123 890 123 8338 191 | ./a.out 
+[?2004l8338[?2004h+[[32m02[0m]$ [Kecho      [7mecho 123 890 123 8338 191[27m:[[32m02[0m]$ echo 123 890 123 8338 191++[[32m02[0m]$ echo 123 890 123 8338 191a::[[32m02[0m]$ echo 123 890 123 8338 191++[[32m02[0m]$ echo 123 890 123 8338 191a::[[32m02[0m]$ echo 123 890 123 8338 191++[[32m02[0m]$ echo 123 890 123 8338 191a[K191 > somenumbers
+[?2004l[?2004h+[[32m02[0m]$ [Kcat somenumbers 
+[?2004l123 890 123 8338 191
+[?2004h+[[32m02[0m]$ [Kcat somenumbers | ./a.out 
+[?2004l8338[?2004h+[[32m02[0m]$ [K./a.out < somenumbers 
+[?2004l8338[?2004h+[[32m02[0m]$ [Kgit add largest.cpp 
+[?2004l[?2004h+[[32m02[0m]$ [Kgit c     echo asdfasdfasdf > largest.cpp [K[K[K[Kgit status
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   largest.cpp[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31msomenumbers[m
+	[31mtranscript[m
+	[31m../cppbooks[m
+	[31m../lasttime[m
+	[31m../misc/[m
+
+[?2004h+[[32m02[0m]$ [Kecho asdfasdf > largest.cpp 
+[?2004l[?2004h+[[32m02[0m]$ [Kgit status
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   largest.cpp[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   largest.cpp[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31msomenumbers[m
+	[31mtranscript[m
+	[31m../cppbooks[m
+	[31m../lasttime[m
+	[31m../misc/[m
+
+[?2004h+[[32m02[0m]$ [Kgit checkout largest.cpp
+[?2004lUpdated 1 path from the index
+[?2004h+[[32m02[0m]$ [Kls
+[?2004l[0m[04;32ma.out[0m  [1mlargest.cpp[0m  [0msomenumbers[0m  [0mtranscript[0m
+[?2004h+[[32m02[0m]$ git status
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   largest.cpp[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31msomenumbers[m
+	[31mtranscript[m
+	[31m../cppbooks[m
+	[31m../lasttime[m
+	[31m../misc/[m
+
+[?2004h+[[32m02[0m]$ [Kcat largest.cpp 
+[?2004l/* program to find the largest integer given */
+#include <iostream>
+/* NOTE: #include just copy pastes file contents into our file! */
+using namespace std;
+/* NOTE: "cin" actually has a last name as well: "std".  So the "full name"
+ * of cin would be "std::cin".  The "using namespace std;" line lets us call
+ * everything with last name "std" by first name only. */
+/* Where does the program actually begin??  We have to call out the
+ * beginning explicitly.  (In general, programs might be spread across
+ * many files).  Here's how: we define "main":  */
+/* It is safe to not understand the syntax for the moment -- in 2 weeks it
+ * will make sense. */
+int main()
+{
+	/* THIS is the first thing our program will do. */
+	/* how to we allocate the pieces of paper? */
+	int blue; /* this gives space to write an integer. */
+	/* NOTE: the "int" is the DATATYPE.  The "blue" is the name.
+	 * The names can be (almost) whatever you want. */
+	int green; /* another space to write an integer. */
+	/* now we've got our two pieces of paper. */
+
+	/* how to listen for numbers?  We'll use "cin", which actually
+	 * comes from a library.  More on that later. */
+	cin >> blue; /* listen, write what you hear to blue. */
+	/* this completes step 1.  On to the rest... */
+
+	while (true) {
+		/* step 2: listen and write on green */
+		cin >> green; /* listen, write what you hear to green. */
+		/* NOTE: green is sort of implicitly "erased" when you do this. */
+		/* let's check and make sure that we actually heard a number: */
+		if (!cin.good()) {
+			break; /* this will end the loop */
+		}
+		/* step 3: compare green and blue; if green is larger, erase
+		 * what's on blue and write what's on green in its place. */
+		if (green > blue) {
+			/* erase blue; copy green to blue */
+			blue = green; /* this is an "assignment statement" */
+		}
+	}
+	/* once the "break" happens, we'll continue here... report the answer: */
+	cout << blue;
+	/* where "cin" is listen, "cout" is speak. */
+}
+[?2004h+[[32m02[0m]$ [K[?2004l
+exit
+
+Script done on 2026-01-29 12:17:23-05:00 [COMMAND_EXIT_CODE="0"]
