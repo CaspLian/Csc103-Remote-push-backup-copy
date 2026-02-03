@@ -1,0 +1,96 @@
+Script started on 2026-02-03 11:23:56-05:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="97" LINES="25"]
+[?2004h+[[32m03[0m]$ ls
+[?2004l[0m[1mdatatypes.cpp[0m  [0moutline[0m  [0mtranscript[0m
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [Kls
+[?2004l[0m[04;32ma.out[0m  [1mdatatypes.cpp[0m  [0moutline[0m  [0mtranscript[0m
+[?2004h+[[32m03[0m]$ ./a.out 
+[?2004lhmmmmmmm.
+[?2004h+[[32m03[0m]$ [K+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.3
+f+f+f == 0.3
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l./[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp ::[[32m03[0m]$ g++ datatypes.cpp
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+2[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[01m[Kdatatypes.cpp:32:24:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   32 |         cout << x/y << [01;35m[K"[m[K
+      |                        [01;35m[K^[m[K
+[01m[Kdatatypes.cpp:32:24:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[01m[Kdatatypes.cpp:33:17:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   33 |                 [01;35m[K"[m[K;
+      |                 [01;35m[K^[m[K
+[01m[Kdatatypes.cpp:33:17:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   33 |                 [01;31m[K";[m[K
+      |                 [01;31m[K^~[m[K
+[01m[Kdatatypes.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kdatatypes.cpp:34:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before '[01m[K}[m[K' token
+   34 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[?2004h+[[32m03[0m]$ [K[K+[[32m03[0m]$ [K+[[32m03[0m]$ g++ ;da   datatypes.cpp 
+[?2004l./[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+2
+[?2004h+[[32m03[0m]$ g++ a datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+[?2004h+[[32m03[0m]$ (z  g++ datatypes.cpp 
+[?2004l./a[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2
+[?2004h+[[32m03[0m]$ g++ a.out       datatypes.cpp 
+[?2004l./[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2.33333
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2.33333
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2.33333
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+x/y == 2
+x/y == 2.33333
+[?2004h+[[32m03[0m]$ [K+[[32m03[0m]$ [K+[[32m03[0m]$ [?2004l
+exit
+
+Script done on 2026-02-03 12:11:33-05:00 [COMMAND_EXIT_CODE="0"]
