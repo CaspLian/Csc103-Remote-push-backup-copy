@@ -16,11 +16,8 @@ int main()
 		sum = sum+recent;
 		/* equivalent shortcut: */
 		// sum += recent;
-		int x = 99;
 	}
-	// double sum;
 	cout << "sum of all numbers was " << sum << "\n";
-	cout << "x is " << x << "\n";
 }
 
 // vim:foldlevel=3
