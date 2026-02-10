@@ -1,0 +1,49 @@
+Script started on 2026-02-10 11:25:52-05:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="97" LINES="25"]
+[?2004h+[[32m05[0m]$ echo {1..5t }
+[?2004l1 2 3 4 5
+[?2004h+[[32m05[0m]$ [Kssh mira  for f in cbc-* ctr-mode.png ; do convert $f -channel RGB -negate light-${f} ; done+[[32m05[0m]$ [42Pssh-keygen -l -f .ssh/known_hosts | less+[[32m05[0m]$ awk -v username="$1" -f check-existing.awk smtpd/creds-smtpd+[[32m05[0m]$ for d in */ ; do (cd "$d" && ls *.cpp | sed 's/\.cpp//' > .gitignore && cd - ) ; done+[[32m05[0m]$ [25Pawk -v username="$1" -f check-existing.awk smtpd/creds-smtpd+[[32m05[0m]$ [20Pssh-keygen -l -f .ssh/known_hosts | less+[[32m05[0m]$ for f in cbc-* ctr-mode.png ; do convert $f -channel RGB -negate light-${f} ; done+[[32m05[0m]$ ssh mira  [K[Kecho {1..54 } | ./sum 
+[?2004lsum of all numbers was 15
+[?2004h+[[32m05[0m]$ [Kecho {1..10} | ./sum 
+[?2004lsum of all numbers was 55
+[?2004h+[[32m05[0m]$ [Kecho | ./sum 
+[?2004lsum of all numbers was 0
+[?2004h+[[32m05[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[01m[Ksum.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Ksum.cpp:20:16:[m[K [01;31m[Kerror: [m[Kconflicting declaration '[01m[Kdouble sum[m[K'
+   20 |         double [01;31m[Ksum[m[K;
+      |                [01;31m[K^~~[m[K
+[01m[Ksum.cpp:9:13:[m[K [01;36m[Knote: [m[Kprevious declaration as '[01m[Kint sum[m[K'
+    9 |         int [01;36m[Ksum[m[K = 0; /* sum of all numbers so far */
+      |             [01;36m[K^~~[m[K
+make: *** [Makefile:21: sum] Error 1
+[?2004h+[[32m05[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[01m[Ksum.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Ksum.cpp:12:24:[m[K [01;35m[Kwarning: [m[Kdeclaration of '[01m[Ksum[m[K' shadows a previous local [[01;35m[K-Wshadow[m[K]
+   12 |                 double [01;35m[Ksum[m[K;
+      |                        [01;35m[K^~~[m[K
+[01m[Ksum.cpp:9:13:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+    9 |         int [01;36m[Ksum[m[K = 0; /* sum of all numbers so far */
+      |             [01;36m[K^~~[m[K
+[?2004h+[[32m05[0m]$ [K+[[32m05[0m]$ [K+[[32m05[0m]$ echo {1..5} | .;  ./sum 
+[?2004lsum of all numbers was 0
+[?2004h+[[32m05[0m]$ [Kg++ sum.cpp 
+[?2004l[?2004h+[[32m05[0m]$ [Kg++[Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[01m[Ksum.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Ksum.cpp:19:21:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kx[m[K' [[01;35m[K-Wunused-variable[m[K]
+   19 |                 int [01;35m[Kx[m[K = 99;
+      |                     [01;35m[K^[m[K
+[01m[Ksum.cpp:23:28:[m[K [01;31m[Kerror: [m[K'[01m[Kx[m[K' was not declared in this scope
+   23 |         cout << "x is " << [01;31m[Kx[m[K << "\n";
+      |                            [01;31m[K^[m[K
+make: *** [Makefile:21: sum] Error 1
+[?2004h+[[32m05[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[?2004h+[[32m05[0m]$ echo _ {1..54 } | ./sum 
+[?2004lsum of all numbers was 15
+[?2004h+[[32m05[0m]$ [K[?2004l
+exit
+
+Script done on 2026-02-10 11:51:05-05:00 [COMMAND_EXIT_CODE="0"]
