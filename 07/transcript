@@ -1,0 +1,88 @@
+Script started on 2026-02-24 11:17:43-05:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="95" LINES="53"]
+[?2004h+[[32m07[0m]$ make 
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+[?2004h+[[32m07[0m]$ [Kecho $^ > ! ^ > ?
+[?2004l0
+[?2004h+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions [K[Kecho $?
+[?2004l0
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+[?2004h+[[32m07[0m]$ [K./functions [5Pecho $?
+[?2004l99
+[?2004h+[[32m07[0m]$ ./functions && echo "functions work,e  ed!^ "
+[?2004lf(3) == 10
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ make./functions && echo "functions worked!"
+[?2004lf(3) == 10
+functions worked!
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+functions don't have to give the same result on same input:
+g(3) == 10
+g(3) == 11
+g(3) == 12
+g(3) == 13
+g(3) == 14
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+functions don't have to give the same result on same input:
+g(3) == 10
+g(3) == 11
+g(3) == 12
+g(3) == 13
+g(3) == 14
+we changed x from h
+h(10) == 17
+a == 10
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+functions don't have to give the same result on same input:
+g(3) == 10
+g(3) == 11
+g(3) == 12
+g(3) == 13
+g(3) == 14
+we changed x from h
+h(a) == 17
+a == 10
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lf(3) == 10
+functions don't have to give the same result on same input:
+g(3) == 10
+g(3) == 11
+g(3) == 12
+g(3) == 13
+g(3) == 14
+we changed x from h
+h(a) == 17
+a == 10
+we changed x from hh
+hh(a) == 17
+a == 17
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint main()[m[K':
+[01m[Kfunctions.cpp:71:16:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type '[01m[Kint&[m[K' to an rvalue of type '[01m[Kint[m[K'
+   71 |         b = hh([01;31m[K23[m[K);
+      |                [01;31m[K^~[m[K
+[01m[Kfunctions.cpp:41:13:[m[K [01;36m[Knote: [m[K  initializing argument 1 of '[01m[Kint hh(int&)[m[K'
+   41 | int hh([01;36m[Kint& x[m[K)
+      |        [01;36m[K~~~~~^[m[K
+make: *** [Makefile:21: functions] Error 1
+[?2004h+[[32m07[0m]$ [?2004l
+exit
+
+Script done on 2026-02-24 12:52:41-05:00 [COMMAND_EXIT_CODE="2"]
