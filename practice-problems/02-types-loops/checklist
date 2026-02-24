@@ -1,9 +1,9 @@
-[ ] average.cpp
-[ ] numeric-types.cpp
-[ ] output1.cpp
-[ ] output2.cpp
-[ ] sum.cpp
-[ ] even-odd-diff.cpp
-[ ] cancellation-violation.cpp
-[ ] count2s.cpp
-[ ] ascii.cpp
+[complete] average.cpp
+[complete] numeric-types.cpp
+[complete] output1.cpp
+[complete] output2.cpp
+[complete] sum.cpp
+[complete] even-odd-diff.cpp
+[complete] cancellation-violation.cpp
+[complete] count2s.cpp
+[complete] ascii.cpp

@@ -11,10 +11,13 @@ int main() {
     double d = 4, e = 2;
     cout << --x << endl;
     cout << x-- << endl;
+    cout << x << endl;
     cout << y/x << endl;
     y = e;
+    cout << "y is " << y << endl;
     cout << y/x << endl;
     cout << x%y << endl;
+    cout << (x-d) << endl;
     cout << (x-d)/y << endl;
     return 0;
 }

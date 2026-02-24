@@ -2,10 +2,12 @@
  * use the compiler to check your work...) */
 #include <iostream>
 using std::cout;
+using namespace std;
 
 int main()
 {
-	cout >> hello world.\n;
+	cout << "hello world." << endl;
+	cout << "hello world" << "\n";
 	return 0;
 }
 

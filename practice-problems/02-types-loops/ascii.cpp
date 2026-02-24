@@ -18,7 +18,13 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+
+
+	for( int i = 32; i<= 126 ; i++) {
+		cout << i << " :: " << (char)i << "\n";
+	}
+
+
 	return 0;
 }
 

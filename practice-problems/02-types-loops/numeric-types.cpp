@@ -16,6 +16,13 @@ int main()
 	 * 3. What type of result do you get when adding or multiplying
 	 *    floating point values with integers? */
 
+	int x = 3;
+	double y = 5000;
+
+  cout << y << "\n";
+  cout << x << "\n";
+
+  cout << y/x;
 	return 0;
 }
 

@@ -11,7 +11,19 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	cin >> n;
+	int ex = 0;
+
+	for (;n%2 == 0;){
+		ex++;
+		n = n/2;
+
+	}
+
+	cout << ex <<"\n";
+
+
 	return 0;
 }
 

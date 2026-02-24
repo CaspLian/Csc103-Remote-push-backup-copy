@@ -11,6 +11,22 @@ using std::cout;
 
 int main()
 {
+
+	int n, m;
+	cin >> n >> m;
+
+	for(int a = 0; a<n; a++){
+
+		for(int i = 0; i<m; i++){
+
+			cout<< "* ";
+		}
+
+		cout << "\n";
+	}
+
+
+
 	return 0;
 }
 

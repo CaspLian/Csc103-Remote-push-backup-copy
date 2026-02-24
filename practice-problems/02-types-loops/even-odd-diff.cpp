@@ -14,7 +14,28 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int x;
+	int e = 0;
+	int o = 0;
+	int s;
+
+	while(cin>>x){
+
+		if(x%2 == 0) {
+			e += x;
+		} else if (x%2 != 0){
+			o += x;
+		}
+
+
+	}
+
+	s = e - o;
+
+	cout << s;
+
+
+
 	return 0;
 }
 

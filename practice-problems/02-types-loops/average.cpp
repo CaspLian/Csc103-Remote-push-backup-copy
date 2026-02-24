@@ -9,7 +9,39 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	/* this is for 3 only*/
+	int x, y, z;
+	double avg;
+	double rem;
+	cin >> x >> y >> z;
+	avg = (double)(x + y + z)/3;
+	cout << "The average is " << avg << "\n";
+	/* This is for any amount */
+
+	int num;
+	int on;
+	double avg2;
+	int i = 0;
+	cin >> num;
+	i++;
+	while (cin >> on) {
+
+		num = num + on;
+		i++;
+
+
+		if (!cin.good()) {
+			break;
+		}
+
+
+	}
+	avg2 = (double)num/i;
+
+
+	cout << "The average is " << avg2 << "\n";
+
+
 	return 0;
 }
 

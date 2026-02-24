@@ -13,6 +13,17 @@ int main()
 	 * fixed amount of space to write the exponent, and there is also
 	 * a fixed amount of space for the coefficient... */
 
+	double d = 75678767876787678;
+
+	double e = 75678767876787670;
+
+	int f = 500;
+
+	cout << d+f << "\n";
+	cout << e+f << "\n";
+
+
+
 	return 0;
 }
 
