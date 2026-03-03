@@ -9,7 +9,32 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int x;
+	int s;
+	int ss;
+
+	cin >> s >> ss;
+	if(ss < s){
+		int temp;
+		temp = s;
+		s = ss;
+		ss = temp;
+	}
+
+	while (cin >> x){
+
+	if (x < s) {
+		s = x;
+	}
+	if (s < x || ss > x) {
+		ss = x;
+
+	}
+
+	}
+
+	cout << "the second smallest number is " << ss << "\n";
+
 	return 0;
 }
 

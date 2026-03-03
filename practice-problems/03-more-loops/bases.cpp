@@ -11,7 +11,29 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+
+	int b;
+	int n;
+
+	cout << "enter your base\n";
+
+	cin >> b;
+
+	cout << "enter your integer\n";
+	cin>>n;
+
+
+
+	while (n>0){
+		int digit = n%b;
+		cout << digit;
+		n /= b;
+	}
+
+
+
+
+
 	return 0;
 }
 

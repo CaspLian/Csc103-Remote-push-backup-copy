@@ -9,7 +9,17 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n,m;
+	cin >> n >> m;
+	int min = n;
+	if (m < n) min = m;
+	int d; /* will be the gcd */
+	for (d = min; true; d--) {
+		if (n % d == 0 && m % d == 0) // we found the answer
+			break;
+	}
+	cout << "gcd was " << d << "\n";
+
 	return 0;
 }
 

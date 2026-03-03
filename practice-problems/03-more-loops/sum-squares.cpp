@@ -12,7 +12,18 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int n;
+	cin >> n;
+	int sum = 0;
+
+	for (int i=0; i <= n; i++){
+		sum += i*i;
+	}
+
+	cout << "the sum of the first n squares is " << sum << "\n";
+
+
+
 	return 0;
 }
 
