@@ -43,5 +43,13 @@ int main()
 	for (size_t i = V.size()-1; i < V.size(); i--) {
 		cout << V[i] << " ";
 	}
+	/* one more version: use the signed version of size_t: */
+	for (ssize_t i = V.size()-1; i >= 0; i--) {
+		cout << V[i] << " ";
+	}
+	/* This will never cause trouble -- your CPU only has 48 pins
+	 * to specify a memory address anyway, and this is unlikely to
+	 * change anytime soon (48 bits === 256TB of RAM).  Using ssize_t,
+	 * we still have 63 bits to work with. */
 	return 0;
 }
