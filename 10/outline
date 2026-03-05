@@ -1,0 +1,21 @@
+Vectors
+=======
+
+* remind them of the basics {push,pop}_back, V.size() and element access
+* maybe draw pictures to illustrate the above
+* discuss OOB issues and `make debug`
+* best practices for giving vectors to functions
+* GDB?
+
+Examples
+--------
+
+* Search
+* Reverse
+* Filtering
+* 2-subset sum?
+* Merging sorted vectors?
+* Function pointers? (maybe next time)
+
+
+# vim:ft=text

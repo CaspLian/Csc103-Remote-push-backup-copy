@@ -1,0 +1,135 @@
+Script started on 2026-03-05 11:25:50-05:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="97" LINES="25"]
+[?2004h+[[32m10[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o oob oob.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o reverse reverse.cpp
+[?2004h+[[32m10[0m]$ echo {1 ..     ..10} | ./reverse 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m10[0m]$ [Kecho [Kecho {1..10} | ./oob 
+[?2004l1 2 3 4 5 6 7 8 9 10 0 0 0 0 0 0 0 0 1041 0 
+[?2004h+[[32m10[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o oob oob.cpp
+[?2004h+[[32m10[0m]$ echo {1..10} | ./oob 
+[?2004l1 2 3 4 5 6 7 8 9 10 0 0 0 0 0 0 0 0 1041 0 540155953 540287027 540418101 540549175 808525881 807415840 807415840 807415840 807415840 875573536 540024881 825242677 892941621 875896883 926429744 540488240 875574325 808532017 875896881 959722800 540358449 892874808 943207730 808984625 892417079 540030008 876032056 876098865 808984624 892417079 540030008 876032056 876098865 926425136 859256117 540422965 808465461 943207474 842539057 842281525 540489526 959592760 842412340 926425137 909719605 540227640 875967033 876034354 875896884 943207472 540030002 892679992 842216503 808984629 842216760 540487984 943011640 943207993 892936241 842151737 540028984 858797109 875837493 959979577 876034098 540553272 842216505 859256624 808984624 876099896 540357174 875706680 925906737 875896889 808661040 540553264 808859448 892351027 926425142 943271990 540358200 959983672 842413112 959979572 925971506 540620592 808465461 808464435 926425144 842215478 540423472 808859448 909654073 842604597 892482614 540422961 842609976 825308725 875896887 842150960 540358201 876097592 909391158 876159025 925905459 540292916 892482616 892352819 876093495 825766450 540357173 875574325 842348856 892936246 842609977 540030519 875705400 875770417 842604592 892482614 540488497 926494777 808859953 875896885 926036528 540030006 959788856 858797878 926425139 875769910 540292403 943011640 943207993 876159028 925905459 540161844 808465461 808464435 959979570 959919666 540162361 842150968 808793649 808984627 876099896 540619318 842150968 909588017 875896880 926430256 540293177 808662073 875966769 876159024 925905459 540227897 959592760 875705907 876093489 825569586 540488503 808465461 943274034 892870708 540553271 892351541 926036789 959979569 825570098 540095541 808858169 943142451 892936249 959920441 540620341 892678712 959459383 875896888 892940336 540095541 
+[?2004h+[[32m10[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o oob oob.cpp
+[?2004h+[[32m10[0m]$ echo {1..0 10} | ./oob 
+[?2004l/usr/include/c++/14.2/debug/vector:508:
+In function:
+    std::debug::vector<_Tp, _Allocator>::reference std::debug::vector<_Tp, 
+    _Allocator>::operator[](size_type) [with _Tp = int; _Allocator = 
+    std::allocator<int>; reference = int&; size_type = long unsigned int]
+
+Error: attempt to subscript container with out-of-bounds index 10, but 
+container only holds 10 elements.
+
+Objects involved in the operation:
+    sequence "this" @ 0x7ffddb859370 {
+      type = std::debug::vector<int, std::allocator<int> >;
+    }
+Aborted                    echo {1..10} | ./oob
+[?2004h+[[32m10[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o oob oob.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o reverse reverse.cpp
+[01m[Kreverse.cpp:[m[K In function '[01m[Kvoid[01;32m[K reverse[m[K(const std::vector<int>&)[m[K':
+[01m[Kreverse.cpp:19:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[Kswap(const __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type&, const __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type&)[m[K'
+   19 |                 [01;31m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;31m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[Kreverse.cpp:5:6:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kvoid[01;32m[K swap[m[K(int&, int&)[m[K' (near match)
+    5 | void [01;36m[Kswap[m[K(int& a, int& b)
+      |      [01;36m[K^~~~[m[K
+[01m[Kreverse.cpp:5:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[Kreverse.cpp:5:6:[m[K [01;31m[Kerror: [m[Kbinding reference of type '[01m[Kint&[m[K' to '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'} discards qualifiers
+In file included from [01m[K/usr/include/c++/14.2/exception:166[m[K,
+                 from [01m[K/usr/include/c++/14.2/ios:41[m[K,
+                 from [01m[K/usr/include/c++/14.2/ostream:40[m[K,
+                 from [01m[K/usr/include/c++/14.2/iostream:41[m[K,
+                 from [01m[Kreverse.cpp:1[m[K:
+[01m[K/usr/include/c++/14.2/bits/exception_ptr.h:229:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Kvoid std::__exception_ptr::[01;32m[Kswap[m[K(exception_ptr&, exception_ptr&)[m[K'
+  229 |     [01;36m[Kswap[m[K(exception_ptr& __lhs, exception_ptr& __rhs)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/exception_ptr.h:229:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'} to '[01m[Kstd::__exception_ptr::exception_ptr&[m[K'
+  229 |     swap([01;36m[Kexception_ptr& __lhs[m[K, exception_ptr& __rhs)
+      |          [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/usr/include/c++/14.2/bits/exception_ptr.h:41[m[K:
+[01m[K/usr/include/c++/14.2/bits/move.h:226:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _Tp> std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::[01;32m[Kswap[m[K(_Tp&, _Tp&)[m[K'
+  226 |     [01;36m[Kswap[m[K(_Tp& __a, _Tp& __b)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/move.h:226:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/14.2/bits/move.h:37[m[K:
+/usr/include/c++/14.2/type_traits: In substitution of '[01m[Ktemplate<bool _Cond, class _Tp> using std::__enable_if_t = typename std::enable_if::type [35m[K[with bool _Cond = false; _Tp = void][m[K[m[K':
+[01m[K/usr/include/c++/14.2/type_traits:2323:11:[m[K   required by substitution of '[01m[Ktemplate<class ... _Cond> using std::_Require = std::__enable_if_t<((bool)std::__and_<_Bn>::value)> [35m[K[with _Cond = {std::__not_<std::__is_tuple_like<const int> >, std::is_move_constructible<const int>, std::is_move_assignable<const int>}][m[K[m[K'
+ 2323 |     using [01;36m[K_Require[m[K = __enable_if_t<__and_<_Cond...>::value>;
+      |           [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/move.h:226:5:[m[K   required by substitution of '[01m[Ktemplate<class _Tp> std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::[01;32m[Kswap[m[K(_Tp&, _Tp&) [35m[K[with _Tp = const int][m[K[m[K'
+  226 |     [01;36m[Kswap[m[K(_Tp& __a, _Tp& __b)
+      |     [01;36m[K^~~~[m[K
+[01m[Kreverse.cpp:19:7:[m[K   required from here
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/14.2/type_traits:138:11:[m[K [01;31m[Kerror: [m[Kno type named '[01m[Ktype[m[K' in '[01m[Kstruct std::enable_if<false, void>[m[K'
+  138 |     using [01;31m[K__enable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/move.h:250:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _Tp, long unsigned int _Nm> std::__enable_if_t<((bool)std::__is_swappable<_Tp>::value)> std::[01;32m[Kswap[m[K(_Tp (&)[_Nm], _Tp (&)[_Nm])[m[K'
+  250 |     [01;36m[Kswap[m[K(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/move.h:250:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[K_Tp [_Nm][m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/14.2/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/14.2/string:51[m[K,
+                 from [01m[K/usr/include/c++/14.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/14.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/14.2/ios:44[m[K:
+[01m[K/usr/include/c++/14.2/bits/stl_pair.h:1089:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _T1, class _T2> typename std::enable_if<std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value>::type std::[01;32m[Kswap[m[K(pair<_T1, _T2>&, pair<_T1, _T2>&)[m[K'
+ 1089 |     [01;36m[Kswap[m[K(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/stl_pair.h:1089:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::pair<_T1, _T2>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/stl_pair.h:1106:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _T1, class _T2> typename std::enable_if<(! std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value)>::type std::[01;32m[Kswap[m[K(pair<_T1, _T2>&, pair<_T1, _T2>&)[m[K' (deleted)
+ 1106 |     [01;36m[Kswap[m[K(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/stl_pair.h:1106:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::pair<_T1, _T2>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/14.2/string:54[m[K:
+[01m[K/usr/include/c++/14.2/bits/basic_string.h:4039:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> void std::[01;32m[Kswap[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K'
+ 4039 |     [01;36m[Kswap[m[K(basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/basic_string.h:4039:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/14.2/bits/memory_resource.h:47[m[K,
+                 from [01m[K/usr/include/c++/14.2/string:68[m[K:
+[01m[K/usr/include/c++/14.2/tuple:2805:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class ... _Elements> typename std::enable_if<std::__and_<std::__is_swappable<_Elements>...>::value>::type std::[01;32m[Kswap[m[K(tuple<_UTypes ...>&, tuple<_UTypes ...>&)[m[K'
+ 2805 |     [01;36m[Kswap[m[K(tuple<_Elements...>& __x, tuple<_Elements...>& __y)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/tuple:2805:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::tuple<_UTypes ...>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/14.2/tuple:2823:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class ... _Elements> typename std::enable_if<(! std::__and_<std::__is_swappable<_Elements>...>::value)>::type std::[01;32m[Kswap[m[K(tuple<_UTypes ...>&, tuple<_UTypes ...>&)[m[K' (deleted)
+ 2823 |     [01;36m[Kswap[m[K(tuple<_Elements...>&, tuple<_Elements...>&) = delete;
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/tuple:2823:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::tuple<_UTypes ...>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/14.2/vector:66[m[K,
+                 from [01m[Kreverse.cpp:2[m[K:
+[01m[K/usr/include/c++/14.2/bits/stl_vector.h:2143:5:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class _Tp, class _Alloc> void std::[01;32m[Kswap[m[K(vector<_Tp, _Alloc>&, vector<_Tp, _Alloc>&)[m[K'
+ 2143 |     [01;36m[Kswap[m[K(vector<_Tp, _Alloc>& __x, vector<_Tp, _Alloc>& __y)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/14.2/bits/stl_vector.h:2143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kreverse.cpp:19:21:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::vector<_Tp, _Alloc>[m[K' and '[01m[Kconst __gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type[m[K' {aka '[01m[Kconst int[m[K'}
+   19 |                 [01;36m[Kswap(V[i],V[n-i-1])[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:23: reverse] Error 1
+[?2004h+[[32m10[0m]$ exit
+[?2004lexit
+
+Script done on 2026-03-05 11:52:42-05:00 [COMMAND_EXIT_CODE="2"]
