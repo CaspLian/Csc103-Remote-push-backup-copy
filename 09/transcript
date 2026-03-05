@@ -1,0 +1,9 @@
+Script started on 2026-03-03 11:40:19-05:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="97" LINES="25"]
+[?2004h+[[32m09[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o reverse reverse.cpp
+[?2004h+[[32m09[0m]$ [K+[[32m09[0m]$ echo P{  {1..1- 0} | ./reverse 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m09[0m]$ [K[K+[[32m09[0m]$ [?2004l
+exit
+
+Script done on 2026-03-03 11:52:58-05:00 [COMMAND_EXIT_CODE="0"]
