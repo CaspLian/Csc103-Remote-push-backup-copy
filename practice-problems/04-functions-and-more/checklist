@@ -1,9 +1,9 @@
-[ ] max.cpp
-[ ] output.cpp
-[ ] swap.cpp
-[ ] simplify.cpp
-[ ] collatz.cpp
-[ ] prototypes.cpp
+[Done] max.cpp
+[done] output.cpp
+[done] swap.cpp
+[done] simplify.cpp
+[done] collatz.cpp
+[done] prototypes.cpp
 [ ] linker/README.txt
 [ ] uncompilable/distributive.cpp
 [ ] uncompilable/dead-code.cpp

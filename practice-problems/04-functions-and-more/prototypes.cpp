@@ -11,11 +11,30 @@
  * http://www.charlesli.org/pic10a/lectures/lecture8/index.html
  * */
 
-/* your answer goes here... */
+#include <iostream>
+using namespace std;
+
+
+void call(int x);
 
 int main()
 {
+	int x;
+	cin >> x;
+	call(x);
+
+
+
 	return 0;
 }
+
+
+void call(int x) {
+
+	x = x*x;
+	cout << x << "\n";
+
+}
+
 
 // vim:foldlevel=2

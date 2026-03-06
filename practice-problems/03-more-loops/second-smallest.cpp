@@ -12,10 +12,10 @@ int main()
 	int x;
 	int s;
 	int ss;
-
+int temp;
 	cin >> s >> ss;
 	if(ss < s){
-		int temp;
+
 		temp = s;
 		s = ss;
 		ss = temp;
@@ -26,7 +26,7 @@ int main()
 	if (x < s) {
 		s = x;
 	}
-	if (s < x || ss > x) {
+	if (s < x && ss > x) {
 		ss = x;
 
 	}

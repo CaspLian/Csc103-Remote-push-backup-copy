@@ -6,11 +6,24 @@
 using std::cin;
 using std::cout;
 
-/* your answer goes here... */
+void swap(int& x, int& y) {
+	int temp;
+	temp = x;
+	x = y;
+	y = temp;
+
+	cout << x << " " << y << "\n";
+}
 
 int main()
 {
 	/* TODO: write a little test here to make sure your function works. */
+	int x, y;
+	cin >> x >> y;
+	swap(x,y);
+
+
+
 	return 0;
 }
 

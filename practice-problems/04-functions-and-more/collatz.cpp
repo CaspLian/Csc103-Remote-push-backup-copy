@@ -15,13 +15,44 @@
  * */
 
 
+int collatz(int x){
+
+	int step = 0;
+
+	while (x > 0){
+
+		if (x == 1) {
+		break;
+	}
+
+	if (x%2==0){
+		x = x/2;
+
+	}else {
+		x = x*3;
+		x = x+1;
+		}
+	step++;
+
+	}
+
+	return step;
+
+}
+
+
+
 #include <iostream>
 using std::cin;
 using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
+	int x;
+	cin >> x;
+	collatz(x);
+
+	cout << collatz(x) << "\n";
 	return 0;
 }
 

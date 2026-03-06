@@ -23,4 +23,4 @@ int main()
     return 0;
 }
 
-// vim:foldlevel=2
+// vim:foldlevel=2S
