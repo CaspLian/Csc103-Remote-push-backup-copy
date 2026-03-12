@@ -1,0 +1,27 @@
+Review basic concepts so far
+----------------------------
+
+* Variables: storage boxes
+* Identifiers: names (e.g., for variables)
+* Assignment: magically clone one box's content into another
+* If and while, but we will cover those more next time
+
+Draw a few alternate pictures depicting memory.
+
+
+Datatypes
+---------
+
+* Basic options (char, int, unsigned, long, float, double, bool)
+* Show literal expressions for each
+* How numbers are represented
+* How numeric types interact (closure properties)
+* Typecasting
+* Conditionals and boolean expressions
+* Interpretations of integers as booleans
+
+Show floating point rounding errors?  0.1+0.1+0.1 != 0.3...
+NOTE: You need about 17 decimal places (e.g. printf("%.17f")) to see the
+difference.
+
+# vim:ft=text

@@ -1,0 +1,14 @@
+Vectors
+=======
+
+* Reminder about checking for out of bounds access; `make debug`...
+* Add element to front of vector (take note of the inefficiency, and actually
+  time it on large inputs)
+* 2-subset sum problem?
+* Function pointers if there is time (see "folding" in ../05/notes.pdf)
+    + typedef void (*transform)(int&);
+    + typedef int (*binaryop)(int,int);
+
+
+
+# vim:ft=text
