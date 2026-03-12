@@ -1,0 +1,21 @@
+Functions
+=========
+
+* contrast with functions from math class (multivalued/non-deterministic,
+  might have side-effects)
+* How to write; how to call
+	+ parameters
+	+ return type
+	+ point out the `return` statement
+* Draw a diagram to illustrate the flow of control?
+* Explore value and reference parameters (ask the question "copy vs original",
+  write something to see how it works)
+* Remind them about scope
+* note that references require an l-value
+* nomenclature: *formal* params vs *actual* params; local vs global variables
+* how to return multiple values?  (codomain is a product space)
+
+
+Remind them about the glossary?
+
+# vim:ft=text

@@ -1,0 +1,17 @@
+Datatypes
+---------
+
+* Example of mixing types?
+* Typecasting
+(Mostly done last time, but include a situation where an integer loses
+information when put into a float and also mention how rounding works.)
+
+* Boolean expressions (==,!=,&&,||...)
+* Interpretations of integers as booleans
+* Accidental assignment foot-gun
+* Stress use of -Wall and introduce makefiles
+* How integers are represented?
+
+Computing a sum if there is time?
+
+# vim:ft=text

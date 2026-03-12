@@ -1,0 +1,38 @@
+Functions
+=========
+
+* Review terminology and remind them of the glossary:
+	+ parameters: formal vs actual
+	+ return type
+	+ local variables vs global
+	+ reference vs value (relationship between formal and actual)
+	+ function header and prototype
+
+I think you should just make a quick example function and call from main, then
+circle the relevant parts (color coded) and label them.
+
+Also draw picture once more for reference vs value parameters.
+
+* how to return multiple values?  (codomain is a product space)
+* note that (non-const) references require an l-value
+
+Vectors
+=======
+
+* Reverse stdin, and as you do, cover the basic vector tools
+  (allocation/templates,add,remove,size)
+* {push,pop}_back, V.size() and OOB issues
+* GDB?
+
+Examples
+--------
+
+* Search
+* Reverse
+* Filtering
+* 2-subset sum?
+* Merging sorted vectors?
+* Function pointers? (maybe next time)
+
+
+# vim:ft=text

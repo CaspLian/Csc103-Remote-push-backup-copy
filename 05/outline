@@ -1,0 +1,11 @@
+Datatypes
+---------
+
+* Go through sum computation carefully
+* Point out the use of a simple *invariant* for the loop
+* Folds in general, maybe showing min and max as examples
+* Review the building blocks we have so far?  Could diagrams be useful?
+* Go through how to parse an expression completely?  Could wait for that to
+  happen organically, I guess?
+
+# vim:ft=markdown

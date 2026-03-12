@@ -1,0 +1,12 @@
+Loops
+-----
+
+* For-loop mechanics
+* Use this as an opportunity to cover scope (what's the value of the counter
+  after the loop?)
+* Print indexes -- ask class to predict the output
+* Draw some rectangles
+* Find the gcd of two integers using brute force
+
+
+# vim:ft=text

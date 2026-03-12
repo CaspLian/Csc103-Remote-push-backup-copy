@@ -1,0 +1,16 @@
+Functions
+=========
+
+* Review terminology and remind them of the glossary:
+	+ parameters: formal vs actual
+	+ return type
+	+ local variables vs global
+	+ reference vs value (relationship between formal and actual)
+* Introduce function prototypes
+* Note that void functions are sometimes called "procedures".
+* Draw a diagram to illustrate the flow of control?
+* note that (non-const) references require an l-value
+* how to return multiple values?  (codomain is a product space)
+
+
+# vim:ft=text
