@@ -1,0 +1,23 @@
+Strings
+=======
+
+Basically, vector<char> with a nicer name and some bonus functions.
+
+Nice functions
+--------------
+
+* Concatenation via + (someone wrote an operator+ for us)
+* += works as well
+* s1.find(s2) is kind of like ctrl-f (note return value for no match)
+* You also get all the vector functions if you want them
+* Length vs size -- seems to be no difference.  String full of `\0` chars will
+  still have .size() == .length()
+
+Exercises
+---------
+
+* Rewrite the find function, maybe with intentional bugs?
+* Palindrome test (easy)
+
+
+# vim:ft=text
