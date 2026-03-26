@@ -1,0 +1,21 @@
+Strings
+=======
+
+* Finish the string matching stuff?  It's already a practice problem.
+* Counting words with FSMs
+* Other applications
+    - parsing config files / formatted text
+	- writing a compiler or assembler
+	- network protocols often described by state diagrams
+
+
+
+Exercises
+---------
+
+* Rewrite the find function (maybe with *intentional* bugs, searching for a
+  long string in a shorter one)?
+* Palindrome test (easy)
+
+
+# vim:ft=text
