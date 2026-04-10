@@ -1,0 +1,61 @@
+Script started on 2026-03-31 11:04:57-04:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="97" LINES="24"]
+[?2004h+[[32m16[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o wc wc.cpp
+[?2004h+[[32m16[0m]$ . echo 'hello c   class ' | ./wc 
+[?2004lchar was: h
+char was: e
+char was: l
+char was: l
+char was: o
+char was:  
+char was:  
+char was:  
+char was: c
+char was: l
+char was: a
+char was: s
+char was: s
+char was:  
+char was: 
+
+[?2004h+[[32m16[0m]$ [Kmakemake
+[?2004lbash: makemake: command not found
+[?2004h+[[32m16[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o wc wc.cpp
+[?2004h+[[32m16[0m]$ echo 'hello class'   | ./wc 
+[?2004lword count: 2
+[?2004h+[[32m16[0m]$ [Kecho ' a  more  tricky   example  ...  ' | ./wc 
+[?2004lword count: 4
+[?2004h+[[32m16[0m]$ [Kecho -e '\hello      hello\tclass\nwhat a\t nice day!' | ./wc 
+[?2004lword count: 6
+[?2004h+[[32m16[0m]$ [K::[[32m16[0m]$ (arg: 1) 8) [3P:[[32m16[0m]$ (arg: 1) 2) [2P:[[32m16[0m]$ ++[[32m16[0m]$ as  [7mecho -e 'hello\tclass\nwhat a\t nice day!'[27m:[[32m16[0m]$ echo -e 'hello\tclass\nwhat a\t nice day!'!++[[32m16[0m]$ echo -e 'hello\tclass\nwhat a\t nice day!' | wc
+[?2004l      2       6      30
+[?2004h+[[32m16[0m]$ [K[7mecho -e 'hello\tclass\nwhat a\t nice day!'[27m+[[32m16[0m]$ echo -e 'hello\tclass\nwhat a\t nice day!' | wc -w
+[?2004l6
+[?2004h+[[32m16[0m]$ [Kls
+[?2004l[0m[1;37mMakefile[0m  [0moutline[0m  [0mtranscript[0m  [04;32mwc[0m  [1mwc.cpp[0m
+[?2004h+[[32m16[0m]$ cat wc.cpp | wcw   ./wc 
+[?2004lword count: 258
+[?2004h+[[32m16[0m]$ [K./wc < wc.cpp 
+[?2004lword count: 258
+[?2004h+[[32m16[0m]$ [K./wc > wc.cpp [K[K[K[Kwc < wc.c[K[K[Kwc -  w < wc.cpp 
+[?2004l258
+[?2004h+[[32m16[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pointers pointers.cpp
+[?2004h+[[32m16[0m]$ [K+[[32m16[0m]$ ./pointers 
+[?2004lx == 100
+[?2004h+[[32m16[0m]$ [K[K+[[32m16[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pointers pointers.cpp
+[?2004h+[[32m16[0m]$ ./pointers 
+[?2004l x == 100
+ y == 23
+*p == 100
+*q == 23
+ x == 100
+ y == 23
+*p == 100
+*q == 100
+[?2004h+[[32m16[0m]$ [K[?2004l
+exit
+
+Script done on 2026-03-31 11:52:00-04:00 [COMMAND_EXIT_CODE="0"]

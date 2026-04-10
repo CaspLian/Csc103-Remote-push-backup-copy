@@ -1,0 +1,20 @@
+FSMs
+====
+
+Write down word count program.
+
+Sketch the diagram for detecting comments in C/C++, maybe mention other
+applications as well.
+
+Pointers
+========
+
+* What they are
+* How to use them
+* Draw some diagrams...
+* Dynamic memory allocations
+* Array syntax
+* Expand a dynamically allocated array
+
+
+# vim:ft=markdown
