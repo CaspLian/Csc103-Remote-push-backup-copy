@@ -1,0 +1,14 @@
+Pointers
+========
+
+* More diagrams...
+* Dynamic memory allocations and deallocations
+* Array syntax
+* Expand a dynamically allocated array
+* Pointer arithmetic (scaling by type)
+* Resize dynamically allocated array
+* Use resize function to grow an array, just like what happens when you do
+  push_back in a vector over and over
+
+
+# vim:ft=markdown
