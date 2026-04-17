@@ -1,0 +1,15 @@
+* Finish the resizing an array exercise.
+* Start on lists...
+
+Linked Lists
+------------
+
+* Draw some pictures to illustrate the basic concept
+* Pros: (efficient insert/remove anywhere you have a pointer)
+* Cons: extra storage; not friendly for the cache; no random access
+* structs, and how to make your own classes
+* node struct
+* Maybe show how to add some nodes to the front of a list.
+
+
+# vim:ft=text
