@@ -1,0 +1,18 @@
+Linked Lists
+------------
+
+### High level
+
+* Reiterate the concept, mention advantages and disadvantages:
+* Pros: (efficient insert/remove anywhere you have a pointer)
+* Cons: extra storage; not friendly for the cache; no random access
+
+### Details
+
+* Remind about `struct`
+* Review the pictures one more time.
+* Example: insert new nodes at the front of a list
+* Example: print a list
+* Example: remove the first node from a list
+
+# vim:ft=text
