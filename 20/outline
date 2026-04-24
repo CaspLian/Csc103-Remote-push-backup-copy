@@ -1,0 +1,20 @@
+Linked Lists
+------------
+
+* Maybe begin by having them draw some pictures...
+  ~~~~~~~~~~~{.cpp}
+  p = new node;
+  p->next = new node;
+  q = p;
+  p = p->next;
+  p->next = q;
+  ~~~~~~~~~~~~~~~~~~
+  Then draw it yourself.
+
+* Remove first element (started last time, but only drew a picture)
+* Show parallel between iterating through a list and a (dynamically allocated)
+  array?
+* Search and remove
+* Append, or concatenate?
+
+# vim:ft=text

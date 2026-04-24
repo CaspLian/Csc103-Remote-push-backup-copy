@@ -1,0 +1,13 @@
+Script started on 2026-04-21 11:34:41-04:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="97" LINES="25"]
+[?2004h+[[32m19[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o lists lists.cpp
+[?2004h+[[32m19[0m]$ echo {1..1o 0} | ./lists 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m19[0m]$ [K[K+[[32m19[0m]$ [K+[[32m19[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o lists lists.cpp
+[?2004h+[[32m19[0m]$ echo _ {1..1o 0 0} | ./lists 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m19[0m]$ [K[?2004l
+exit
+
+Script done on 2026-04-21 11:51:27-04:00 [COMMAND_EXIT_CODE="0"]

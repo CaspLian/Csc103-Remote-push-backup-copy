@@ -1,0 +1,10 @@
+
+  node* p;
+  node* q;
+  p = new node;
+  p->next = new node;
+  q = p;
+  p = p->next;
+  p->next = q;
+
+// vim:ft=cpp
