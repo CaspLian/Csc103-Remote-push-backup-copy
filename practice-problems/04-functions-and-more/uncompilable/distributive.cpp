@@ -6,14 +6,14 @@
  * where "A" represents some boolean expression.
  * */
 
+
+X();
+Z();
+
 if (A) {
-	X();
 	Y();
-	Z();
 } else {
-	X();
 	W();
-	Z();
 }
 
 

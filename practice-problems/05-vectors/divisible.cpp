@@ -10,11 +10,35 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+ vector<int> divisible(vector<int>& V, int d){
+
+	vector<int> X;
+	for(size_t i=0; i< V.size(); i++){
+		if (V[i]%d == 0){
+			X.push_back(V[i]);
+		}
+	}
+
+	return X;
+
+}
+
+
+
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int x;
+	vector<int> V;
+	while (cin >> x){
+		V.push_back(x);
+	}
+
+	vector<int> result = divisible(V,2);
+	for (size_t i = 0; i < result.size(); i++) {
+		cout << result[i] << "\n";
+	}
+
 	return 0;
 }
 

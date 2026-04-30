@@ -1,7 +1,7 @@
-[ ] output1.cpp
-[ ] output2.cpp
-[ ] resize.cpp
-[ ] insertfront.cpp
+[x] output1.cpp
+[x] output2.cpp
+[x] resize.cpp
+[x] insertfront.cpp
 [ ] search.cpp
 [ ] clear.cpp
 [ ] append.cpp

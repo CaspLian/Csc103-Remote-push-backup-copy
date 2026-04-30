@@ -4,7 +4,7 @@
 [done] simplify.cpp
 [done] collatz.cpp
 [done] prototypes.cpp
-[ ] linker/README.txt
+[done] linker/README.txt
 [ ] uncompilable/distributive.cpp
 [ ] uncompilable/dead-code.cpp
 [ ] uncompilable/if-else-reorder.cpp

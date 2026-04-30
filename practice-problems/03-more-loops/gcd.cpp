@@ -15,8 +15,9 @@ int main()
 	if (m < n) min = m;
 	int d; /* will be the gcd */
 	for (d = min; true; d--) {
-		if (n % d == 0 && m % d == 0) // we found the answer
+		if (n % d == 0 && m % d == 0) {
 			break;
+		}
 	}
 	cout << "gcd was " << d << "\n";
 

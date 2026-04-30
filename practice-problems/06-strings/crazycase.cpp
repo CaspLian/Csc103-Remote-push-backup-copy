@@ -28,10 +28,38 @@ using std::endl;
 using std::string;
 
 /* your answer goes here... */
+void crazycase( string& n){
+	string low = "abcdefghijklmnopqrstuvwxyz";
+	string up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+	for(size_t i = 0; i < n.length(); i++){
+		if (n[i] == '.'){
+			n[i] = '!';
+		} else if (rand() % 2 != 0){
+			for(size_t j=0; j<low.length(); j++){
+
+				if(n[i] == low[j]){
+					n[i] = n[i] - 32;
+				}
+
+				else if(n[i] == up[j]){
+					n[i] = n[i] +32;
+				}
+			}
+		}
+	}
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+
+	string word = "Dragons are merely artifacts of the inane folklore of our ancestors.";
+crazycase(word);
+	cout << word << "\n";
+
+
+
 	return 0;
 }
 

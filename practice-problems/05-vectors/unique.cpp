@@ -10,7 +10,7 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+void unique(const vector<int>& C, vector<int>& U);
 
 int main()
 {

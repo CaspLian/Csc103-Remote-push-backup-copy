@@ -41,6 +41,30 @@ if (C) {
 	Y();
 }
 
+if (A) {
+	X();
+} else if (B) {
+	Y();
+} else if (C) {
+	Z();
+}
+
+if (B) {
+	Y();
+} else if (A) {
+	X();
+} else if (C) {
+	Z();
+}
+
+if (C) {
+	Z();
+} else if (B) {
+	Y();
+} else if (A) {
+	X();
+}
+
 /* Lastly, for concreteness, here is a situation where they can NOT be
  * arbitrarily rearranged without changing the program's behavior (assuming
  * X,Y,Z each do something different, of course): */

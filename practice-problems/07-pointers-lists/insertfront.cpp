@@ -13,8 +13,29 @@ int main()
 {
 	/* TODO: read integers from stdin and insert each one to the front
 	 * of a linked list. */
+	int x;
 	node* L = NULL;
+
+
+	while (cin >> x){
+
+	node* p = new node;
+
+	p->data = x;
+	p->next = L;
+	L=p;
+
+
+
+	}
 	/* TODO: print the list back out so you know it worked. */
+
+	while (L != NULL){
+		cout << L->data << " ";
+		L = L->next;
+	}
+cout << "\n";
+
 	return 0;
 }
 

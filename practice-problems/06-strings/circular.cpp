@@ -12,6 +12,21 @@ using std::endl;
 using std::string;
 
 /* your answer goes here... */
+void circular(string& n, int n){
+
+	for(int i=0; i<n; i++){
+
+
+
+	}
+
+
+
+
+}
+
+
+
 
 int main()
 {

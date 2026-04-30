@@ -14,9 +14,27 @@ using std::vector;
 
 int polyeval(const vector<int>& C, int x);
 
+int polyeval(const vector<int>& C, int x){
+	int result = 0;
+	int power = 1;
+	for (size_t i = 0; i <C.size(); i++){
+		result += C[i]* power;
+		power *= x;
+	}
+	return result;
+
+}
+
+
+
 int main()
 {
 	/* TODO: once you have written polyeval, add some test code here */
+	vector <int> V = {1, 2, 3, 4, 5};
+
+	cout << polyeval(V, 2) << "\n";
+
+
 	return 0;
 }
 

@@ -1,12 +1,12 @@
-[ ] search.cpp
-[ ] divisible.cpp
-[ ] reverse.cpp
-[ ] popfront.cpp
-[ ] binarysearch.cpp
-[ ] subsetsum.cpp
-[ ] merge.cpp
+[x] search.cpp
+[x] divisible.cpp
+[x] reverse.cpp
+[x] popfront.cpp
+[x] binarysearch.cpp
+[x] subsetsum.cpp
+[x] merge.cpp
 [ ] unique.cpp
-[ ] sort.cpp
-[ ] polyeval.cpp
+[X] sort.cpp
+[X] polyeval.cpp
 [ ] countbydigits.cpp
 [ ] map.cpp

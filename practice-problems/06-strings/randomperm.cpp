@@ -21,6 +21,16 @@ using std::string;
 
 /* your answer goes here... */
 
+string random(const string& A){
+	int s = A.length();
+	for(int i=0;i < s; i++ ){
+
+	}
+
+
+
+}
+
 int main()
 {
 	/* TODO: call your function, make sure it works... */

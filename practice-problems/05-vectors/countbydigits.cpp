@@ -27,7 +27,11 @@ using std::cout;
 #include <vector>
 using std::vector;
 
+
+//part 1//
 size_t countdigits(size_t n);
+
+
 
 int main()
 {

@@ -8,10 +8,32 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+bool vCheck(vector<int>& V, int x){
+
+	bool search = false;
+
+	for ( size_t i =0; i < V.size(); i++ ){
+		if(V[i] == x) {
+			search = true;
+		}
+
+	}
+
+	return search;
+
+
+}
 
 int main()
 {
+	int x;
+	vector<int> V;
+	while(cin >> x){
+		V.push_back(x);
+	}
+
+	cout << vCheck(V,5) << "\n";
+
 	/* TODO: call your function, make sure it works... */
 	return 0;
 }

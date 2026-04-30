@@ -27,4 +27,6 @@ if (A) {
  * */
 
 
+/* X() will be dead code when A is false, Y() will be dead code if A is true or B is false, Z() will be dead code is A or B is true or C is false. W() is dead code if any of the conditions A B C is true.
+
 // vim:foldlevel=2

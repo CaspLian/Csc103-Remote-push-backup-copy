@@ -15,9 +15,38 @@ using std::string;
 
 /* your answer goes here... */
 
+bool vowels(const string& n){
+	int volcount = 0;
+	string vowel = "aeiou";
+
+	for(size_t i = 0; i < 5; i ++){
+		for (size_t j =0; j < n.length(); j++){
+			if(vowel[i] == n[j]){
+				volcount++;
+				break;
+			}
+		}
+	}
+	if(volcount == 5) return true;
+
+
+	return false;
+
+
+}
+
+
+
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+
+
+	string word = "programming is super fun";
+	cout << vowels(word) << "\n";
+
+
+
 	return 0;
 }
 

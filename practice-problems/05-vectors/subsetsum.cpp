@@ -12,10 +12,33 @@ using std::cout;
 #include <vector>
 using std::vector;
 
+
+bool subsetsum(const vector<int>& X, int t){
+
+	for(size_t i=0; i <X.size()-1; i++){
+		for(size_t j= i+1; j < X.size(); j++){
+			if (X[i]+ X[j] == t) {
+				cout << "indexes i:"<< i <<" and j:" << j << "\n";
+				return true;
+			}
+		}
+
+	}
+
+return false;
+
+}
+
 /* your answer goes here... */
 
 int main()
 {
+	vector<int> V = {3, 4, 5, 2,1,7};
+
+	cout << subsetsum(V, 9) << "\n";
+
+
+
 	/* TODO: call your function, make sure it works... */
 	return 0;
 }

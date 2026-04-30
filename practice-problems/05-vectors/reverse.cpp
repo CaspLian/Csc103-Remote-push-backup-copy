@@ -9,10 +9,33 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+void reverse(vector<int>& V){
+	size_t i=0;
+	size_t j= V.size() -1;
+
+while(i <j) {
+		int temp = V[i];
+		V[i] = V[j];
+		V[j] = temp;
+		i++;
+		j--;
+	}
+
+}
 
 int main()
 {
+	int x;
+	vector<int> V;
+	while (cin >> x){
+		V.push_back(x);
+	}
+	reverse(V);
+	for (size_t i = 0; i < V.size(); i++){
+		cout << V[i] << "";
+	}
+
+
 	/* TODO: call your function, make sure it works... */
 	return 0;
 }
