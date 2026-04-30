@@ -1,0 +1,24 @@
+Generating assembly code
+========================
+
+If you ever want to see the assembly version of your code as produced by your
+compiler, here is how you do it with `g++`:
+
+~~~~~~~~~~~{.bash}
+$ g++ -S -o thing.s thing.cpp
+~~~~~~~~~~~~~~~~~~
+
+I did this to check the differences in the two versions which I posted on
+piazza.  Most of the time it's nice to have detailed comments in the assembly
+so that you can quickly figure out what part of the source it corresponds to.
+In this case, use one more flag:
+
+~~~~~~~~~~~{.bash}
+$ g++ -S -fverbose-asm -o thing.s thing.cpp
+~~~~~~~~~~~~~~~~~~
+
+Lastly, here is some reading on undefined behavior.  I was a bit annoyed last
+time when I felt like the compiler sabotaged me, but I actually think it
+wasn't a totally unreasonable thing to do in that case.
+
+<https://en.wikipedia.org/wiki/Undefined_behavior>
